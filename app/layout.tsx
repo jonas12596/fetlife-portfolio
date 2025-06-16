@@ -9,8 +9,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "FetLife Product Designer Portfolio – Jonas Guzman",
-  description: "Product designer & frontend developer blending design, code, AI, and kink community safety.",
+  title: "Jonas Guzman - Web Developer Portfolio",
+  description: "Web developer specializing in modern frontend technologies and responsive design.",
 };
 
 export default function RootLayout({

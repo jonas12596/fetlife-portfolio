@@ -1,10 +1,4 @@
 "use client"
-
-import { useState } from "react";
-import Image from "next/image";
-import folder from '../../public/folder.png'
-
-
 export default function MyComputer({ windowMin }: { windowMin: boolean }) {
 
     function handleDragWin(e: React.MouseEvent<HTMLElement>) {
@@ -36,17 +30,16 @@ export default function MyComputer({ windowMin }: { windowMin: boolean }) {
     }
 
     return (
-        <div className={windowMin ? "z-10 relative border-[#0052e6] lg:translate-x-[20rem] lg:translate-y-10 rounded-tl-lg rounded-tr-lg border-l-2 border-b-2 border-r-2 w-full lg:w-3/5 h-full lg:h-3/4 flex bg-white" : "relative border-[#0052e6] rounded-tl rounded-tr border-l-2 border-b-2 border-r-2 w-full lg:w-3/5 h-full lg:h-3/4 hidden bg-white"}>
+        <div className={windowMin ? "z-10 relative border-[#0052e6] lg:translate-x-[20rem] lg:translate-y-10 rounded-tl-lg rounded-tr-lg border-l-2 border-b-2 border-r-2 w-full lg:w-3/5 h-full lg:h-3/4 flex bg-gradient-to-r from-[#f2f4f1] to-[#f0eddc]" : "relative border-[#0052e6] rounded-tl rounded-tr border-l-2 border-b-2 border-r-2 w-full lg:w-3/5 h-full lg:h-3/4 hidden bg-white"}>
             <header
                 className="cursor-pointer w-full flex items-center justify-between h-9 p-2 border-l border-r border-[#0067fc] bg-gradient-to-b from-[#0067fc] to-[#0258e3] rounded-tl rounded-tr shadow-inner"
                 onMouseDown={handleDragWin}
             >
                 <div className="absolute inset-0 rounded-r pointer-events-none">
-                    <div className="absolute top-0 rounded-tl rounded-tr z-0 left-0 w-full h-2 rounded-r bg-[#ffffff10] blur-[1px]"></div>
+                    <div className="absolute top-0 rounded-tl rounded-tr z-0 left-0 w-full h-2 rounded-r bg-[#829cfa10] blur-[1px]"></div>
                 </div>
                 <div className="flex items-center gap-1 z-20">
-                    <Image src={folder} alt="Folder" width={18} height={18} />
-                    <p className="text-white text-sm">My Computer</p>
+                    <p className="text-white text-sm">System Preferences</p>
                 </div>
             </header>
         </div>

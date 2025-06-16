@@ -21,7 +21,7 @@ export default function Home() {
 
   return (
     <div className="home-container min-w-full h-screen relative">
-      <Nav windowMin={windowMin} handleWindowMin={handleWindowMin} handleStartBtn={handleStartBtn} />
+      <Nav windowMin={windowMin} startBtn={startBtn} handleWindowMin={handleWindowMin} handleStartBtn={handleStartBtn} />
       <MyComputer windowMin={windowMin} />
       <div className="absolute top-4 left-4 flex items-center flex-col">
         <Image src={trashBin} alt="Trash bin" className="z-0 w-10 h-10 lg:w-12 lg:h-12" />
