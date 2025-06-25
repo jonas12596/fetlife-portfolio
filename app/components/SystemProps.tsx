@@ -143,17 +143,29 @@ export default function SystemProps({ windowMin }: { windowMin: boolean }) {
                             <div className="w-full flex items-start flex-col gap-4">
                                 <h1 className="font-semibold text-lg">GitHub Projects</h1>
                                 <div className="flex items-start flex-col gap-3">
-                                    <div className="border-l-4 border-blue-500 pl-4">
+                                    <div className="pl-4" style={{
+                                        borderLeftWidth: '4px',
+                                        borderLeftStyle: 'solid',
+                                        borderImage: 'linear-gradient(to bottom, #3b82f6, #06b6d4) 1'
+                                    }}>
                                         <h2 className="font-semibold">DM Voice Notes</h2>
                                         <p className="text-sm font-light">Voice messaging system for intimate conversations</p>
                                         <p className="text-sm text-gray-600">Next.js • Supabase • WebRTC</p>
                                     </div>
-                                    <div className="border-l-4 border-green-500 pl-4">
+                                    <div className="pl-4" style={{
+                                        borderLeftWidth: '4px',
+                                        borderLeftStyle: 'solid',
+                                        borderImage: 'linear-gradient(to bottom, #22c55e, #84cc16) 1'
+                                    }}>
                                         <h2 className="font-semibold">Vanish Mode</h2>
                                         <p className="text-sm font-light">Auto-deleting messages for privacy</p>
                                         <p className="text-sm text-gray-600">React • Firebase • Encryption</p>
                                     </div>
-                                    <div className="border-l-4 border-purple-500 pl-4">
+                                    <div className="pl-4" style={{
+                                        borderLeftWidth: '4px',
+                                        borderLeftStyle: 'solid',
+                                        borderImage: 'linear-gradient(to bottom, #f59e42, #fbbf24) 1'
+                                    }}>
                                         <h2 className="font-semibold">PlaySafe Badge</h2>
                                         <p className="text-sm font-light">Verification system for safe play</p>
                                         <p className="text-sm text-gray-600">Vue.js • MongoDB • JWT</p>
